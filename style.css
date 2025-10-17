@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgb(19, 19, 63);
+  padding: 2%;
+  flex-wrap: wrap;
+}
+
+main {
+  background-color: rgb(8, 8, 47);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+main img {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.imogi ul {
+  display: flex;
+  padding: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-propos {
+  background-color: rgb(15, 15, 60);
+  padding: 40px 20px;
+}
+
+.section-propos img {
+  width: 250px;
+  border-radius: 10%;
+  object-fit: cover;
+  height: 250px;
+}
+
+.section-propos h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.competences {
+  background-color: rgb(15, 15, 60);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.icons img {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+}
+
+.projects {
+  background-color: rgb(23, 23, 80);
+  padding: 40px 20px;
+}
+
+.projects h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.project img {
+  border-radius: 10%;
+  width: 100%;
+  max-width: 800px;
+}
+
+.pro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.pro img {
+  border-radius: 10%;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.contact {
+  background-color: rgb(15, 15, 60);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact img {
+  padding: 20px;
+  width: 100px;
+}
+
+.contact p {
+  padding: 20px;
+}
+
+.formulaire {
+  background-color: rgb(23, 23, 80);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.formulaire form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.formulaire h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+form label {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+form input[type=submit] {
+  background-color: rgb(79, 79, 211);
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+form textarea {
+  height: 100px;
+  resize: none;
+  border-radius: 10px;
+}
+
+/* ==================== Responsive Design ==================== */
+
+@media (max-width: 1024px) {
+  main {
+    height: auto;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+
+  .project,
+  .pro {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .icons {
+    flex-direction: column;
+  }
+
+  .icons img {
+    width: 4em;
+    height: 4em;
+  }
+
+  .formulaire form {
+    width: 100%;
+  }
+
+  .contact img {
+    width: 70px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  .project img,
+  .pro img {
+    width: 100%;
+  }
+
+  main img {
+    width: 7em;
+    height: 7em;
+  }
+}
